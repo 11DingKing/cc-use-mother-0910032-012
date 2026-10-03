@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "product": "监管抽检计划",
+  "source_context": "当前 GitHub 账号内通过正式容器验证的 Python 后端项目群",
+  "actors": [
+    "机构合规员",
+    "执业人员",
+    "监管人员",
+    "复核专家"
+  ],
+  "states": [
+    "登记",
+    "待核验",
+    "处置中",
+    "已决定",
+    "已归档"
+  ],
+  "invariants": [
+    "风险抽样规则",
+    "检查员回避",
+    "资源原子锁定",
+    "计划断点续跑"
+  ],
+  "sample_cases": [
+    {
+      "case_id": "0910032-012-A",
+      "actor": "机构合规员",
+      "state": "登记"
+    },
+    {
+      "case_id": "0910032-012-B",
+      "actor": "复核专家",
+      "state": "待核验"
+    }
+  ],
+  "tags": [
+    "inspection-planning",
+    "risk-sampling"
+  ]
+}
